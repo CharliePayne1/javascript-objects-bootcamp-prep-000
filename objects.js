@@ -1,7 +1,10 @@
-var playlist = {1: "20"}
-function updatePlaylist(obj, key, value) {
-  obj[key] = value
- 
-  return obj
+var playlist = { Capaldi: "Bruises" };
+
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
+  return playlist;
 }
-function removeFromPlaylist(obj, key) { delete obj[key]; return obj;}
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName];
+  return playlist;
+}
